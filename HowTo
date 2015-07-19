@@ -10,9 +10,9 @@ You can type Ctrl+c to pause the program at any point.
 
 Commands:
   sta start             pause at the start of the main program
-  s   step              step to the next source line
+  s   step              step to the next source line. Will step into functions.
   si  step instruction  step a single instruction
-  n   next              next program (not sure how this differs from step)
+  n   next              step to next source line in the current context. Will not step into functions.
   ni  next instruction  next instruction
   r   run               run without debugging
   c   continue          run from the current location without debugging
