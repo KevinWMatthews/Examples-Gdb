@@ -1,4 +1,5 @@
-SOURCE_FILES=main.c
+SOURCE_FILES=main.c file.c
+INCLUDE_DIR=.
 TARGET_FILE=main
 OUTPUT_DIR=build
 TARGET=$(OUTPUT_DIR)/$(TARGET_FILE)
@@ -13,7 +14,7 @@ run: $(TARGET)
 
 $(TARGET): $(SOURCE_FILES)
 	mkdir -p $(OUTPUT_DIR)
-	gcc -g $^ -o $(TARGET)
+	gcc -g $^ -I$(INCLUDE_DIR) -o $(TARGET)
 
 clean:
 	rm -rf $(OUTPUT_DIR)

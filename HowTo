@@ -21,18 +21,18 @@ Commands:
   Q   Quit              MAKE IT STOP!
 
 To set breakpoints, type
-  b   break <value>       value must be a line number or function name
-  aw  awatch <variable>   set a watchpoint on a variable
+  b   break <file>:<value>    value must be a line number or function name within a file
+  aw  awatch <variable>       set a watchpoint on a variable
   dis disable <?>
   en  enable <?>
       enable breakpoints once
       enable delete
   del delete <?>
-  i b info break          list current breakpoints
-      ignore <count>      ignore a given number of breakpoint hits
-      skip                ignore stuff while stepping
-      trace               set a tracepoint (?)
-      watch               difference between awatch?
+  i b info break              list current breakpoints
+      ignore <count>          ignore a given number of breakpoint hits
+      skip                    ignore stuff while stepping
+      trace                   set a tracepoint (?)
+      watch                   difference between awatch?
 
 print <expression>
 set <expression> = <value>
