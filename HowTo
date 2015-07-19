@@ -1,0 +1,38 @@
+HowTo
+
+Type gdb <program_name>
+GDB should open.
+
+To simply run your program without debugging, type
+run (or just r)
+
+You can type Ctrl+c to pause the program at any point.
+
+Commands:
+  sta start             pause at the start of the main program
+  s   step              step to the next source line
+  si  step instruction  step a single instruction
+  n   next              next program (not sure how this differs from step)
+  ni  next instruction  next instruction
+  r   run               run without debugging
+  c   continue          run from the current location without debugging
+  bt  backtrace
+  k   kill              make it stop.
+  Q   Quit              MAKE IT STOP!
+
+To set breakpoints, type
+  b   break <value>       value must be a line number or function name
+  aw  awatch <variable>   set a watchpoint on a variable
+  dis disable <?>
+  en  enable <?>
+      enable breakpoints once
+      enable delete
+  del delete <?>
+  i b info break          list current breakpoints
+      ignore <count>      ignore a given number of breakpoint hits
+      skip                ignore stuff while stepping
+      trace               set a tracepoint (?)
+      watch               difference between awatch?
+
+print <expression>
+set <expression> = <value>
